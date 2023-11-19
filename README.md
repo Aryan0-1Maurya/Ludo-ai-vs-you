@@ -4,7 +4,7 @@ Experience the classic board game of Ludo with a twist — challenge an AI oppon
 
 ## Play the Game
 
-[Play Now](https://aryan0-1maurya.github.io/ludo-ai-vs-you/) 🕹️
+[Play Now](https://aryan0-1maurya.github.io/Ludo-ai-vs-you/) 🕹️
 
 ## About the Game
 
