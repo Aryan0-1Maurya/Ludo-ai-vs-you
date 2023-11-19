@@ -1,0 +1,1907 @@
+<!-- 
+
+      ************************************************************
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+{   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  }
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+      ************************************************************
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="author" content="Aryan Maurya" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta
+      name="description"
+      content="This is online ludo game build for your imporove thing skill in this domain by aryan maurya enjoy your game"
+    />
+    <meta
+      name="keywords"
+      content="ludo ,ai ludo,online ludo,play ludo,online ai ludo,ai based ludo,ludo ai,user vs ai,ai ludo ,ludo ,loodu ,ludoo,lulu,ludo games,lufdo onlne ,ludo play , games player , online t rex dinogame,online games hub, fun free, online , dino, human, computer, other game,color poly green shok,online dino game by aryan , aryan sir, aryan sir game"
+    />
+    <title>Ludo by Aryan Maurya</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="aryan_maurya.js" defer></script>
+  </head>
+  <body>
+    <div class="dice">
+      <div class="mydice"></div>
+    </div>
+
+    <div class="game">
+      <div class="house green greenhouse">
+        <div class="box">
+          <div class="square square-one green"></div>
+          <div class="square square-two green"></div>
+          <div class="square square-three green"></div>
+          <div class="square square-four green"></div>
+        </div>
+      </div>
+
+      <div class="house yellow yellowhouse" style="right: 0">
+        <div class="box">
+          <div class="square square-one yellow" id="yellowrestart1">
+            <svg
+              class="yellowpiece"
+              id="yellow1"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0%"
+              y="0%"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24.0 24.0"
+              enable-background="new 0 0 24.0 24.0"
+              xml:space="preserve"
+            >
+              <defs>
+                <linearGradient
+                  id="stkGrad1"
+                  x1="-3.107%"
+                  y1="49.865%"
+                  x2="100.605%"
+                  y2="50.091%"
+                >
+                  <stop
+                    offset="0.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.078%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.915%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.308%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.397%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="24.482%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="23.852%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.406%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.673%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="40.151%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="39.950%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="47.912%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="48.169%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.636%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.896%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.504%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.484%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.505%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.453%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.398%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.685%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.747%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.677%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.395%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.665%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <path
+                fill="#FFFFFF"
+                stroke="#682400"
+                fill-opacity="0.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="1.0240875"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,12.38C14.95,12.38,17.21,14.53,17.21,17.19C17.21,19.84,14.95,21.99,12.15,21.99C9.35,21.99,7.09,19.84,7.09,17.19C7.09,14.53,9.35,12.38,12.15,12.38z"
+              />
+              <path
+                class="pieceready"
+                id="yellow1ready"
+                transform="rotate(-0.00 12.15 17.19)"
+                fill="#FFFFFF"
+                stroke="url(#stkGrad1)"
+                fill-opacity="0.000"
+                stroke-opacity="1.0"
+                fill-rule="nonzero"
+                stroke-width="0.71999997"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,11.55C15.26,11.55,17.79,14.07,17.79,17.19C17.79,20.30,15.26,22.82,12.15,22.82C9.04,22.82,6.51,20.30,6.51,17.19C6.51,14.07,9.04,11.55,12.15,11.55z"
+              />
+              <path
+                fill="#FFFFFF"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,17.19C9.33,14.13,6.17,10.31,6.01,6.69C6.01,-1.10,18.15,-1.10,18.11,6.65C17.96,10.00,15.12,14.17,12.15,17.19z"
+              />
+              <path
+                fill="#ffe01b"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M11.92,2.70C14.17,2.70,15.99,4.52,15.99,6.77C15.99,9.02,14.17,10.85,11.92,10.85C9.67,10.85,7.85,9.02,7.85,6.77C7.85,4.52,9.67,2.70,11.92,2.70z"
+              />
+            </svg>
+          </div>
+          <div class="square square-two yellow" id="yellowrestart2">
+            <svg
+              class="yellowpiece"
+              id="yellow2"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0%"
+              y="0%"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24.0 24.0"
+              enable-background="new 0 0 24.0 24.0"
+              xml:space="preserve"
+            >
+              <defs>
+                <linearGradient
+                  id="stkGrad1"
+                  x1="-3.107%"
+                  y1="49.865%"
+                  x2="100.605%"
+                  y2="50.091%"
+                >
+                  <stop
+                    offset="0.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.078%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.915%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.308%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.397%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="24.482%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="23.852%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.406%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.673%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="40.151%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="39.950%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="47.912%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="48.169%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.636%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.896%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.504%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.484%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.505%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.453%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.398%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.685%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.747%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.677%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.395%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.665%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <path
+                fill="#FFFFFF"
+                stroke="#682400"
+                fill-opacity="0.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="1.0240875"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,12.38C14.95,12.38,17.21,14.53,17.21,17.19C17.21,19.84,14.95,21.99,12.15,21.99C9.35,21.99,7.09,19.84,7.09,17.19C7.09,14.53,9.35,12.38,12.15,12.38z"
+              />
+              <path
+                class="pieceready"
+                id="yellow2ready"
+                transform="rotate(-0.00 12.15 17.19)"
+                fill="#FFFFFF"
+                stroke="url(#stkGrad1)"
+                fill-opacity="0.000"
+                stroke-opacity="1.0"
+                fill-rule="nonzero"
+                stroke-width="0.71999997"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,11.55C15.26,11.55,17.79,14.07,17.79,17.19C17.79,20.30,15.26,22.82,12.15,22.82C9.04,22.82,6.51,20.30,6.51,17.19C6.51,14.07,9.04,11.55,12.15,11.55z"
+              />
+              <path
+                fill="#FFFFFF"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,17.19C9.33,14.13,6.17,10.31,6.01,6.69C6.01,-1.10,18.15,-1.10,18.11,6.65C17.96,10.00,15.12,14.17,12.15,17.19z"
+              />
+              <path
+                fill="#ffe01b"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M11.92,2.70C14.17,2.70,15.99,4.52,15.99,6.77C15.99,9.02,14.17,10.85,11.92,10.85C9.67,10.85,7.85,9.02,7.85,6.77C7.85,4.52,9.67,2.70,11.92,2.70z"
+              />
+            </svg>
+          </div>
+          <div class="square square-three yellow" id="yellowrestart3">
+            <svg
+              class="yellowpiece"
+              id="yellow3"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0%"
+              y="0%"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24.0 24.0"
+              enable-background="new 0 0 24.0 24.0"
+              xml:space="preserve"
+            >
+              <defs>
+                <linearGradient
+                  id="stkGrad1"
+                  x1="-3.107%"
+                  y1="49.865%"
+                  x2="100.605%"
+                  y2="50.091%"
+                >
+                  <stop
+                    offset="0.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.078%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.915%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.308%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.397%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="24.482%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="23.852%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.406%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.673%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="40.151%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="39.950%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="47.912%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="48.169%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.636%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.896%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.504%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.484%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.505%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.453%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.398%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.685%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.747%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.677%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.395%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.665%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                </linearGradient>
+
+                <!-- 
+
+      ************************************************************
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+{   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  }
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+      ************************************************************
+ -->
+              </defs>
+              <path
+                fill="#FFFFFF"
+                stroke="#682400"
+                fill-opacity="0.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="1.0240875"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,12.38C14.95,12.38,17.21,14.53,17.21,17.19C17.21,19.84,14.95,21.99,12.15,21.99C9.35,21.99,7.09,19.84,7.09,17.19C7.09,14.53,9.35,12.38,12.15,12.38z"
+              />
+              <path
+                class="pieceready"
+                id="yellow3ready"
+                transform="rotate(-0.00 12.15 17.19)"
+                fill="#FFFFFF"
+                stroke="url(#stkGrad1)"
+                fill-opacity="0.000"
+                stroke-opacity="1.0"
+                fill-rule="nonzero"
+                stroke-width="0.71999997"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,11.55C15.26,11.55,17.79,14.07,17.79,17.19C17.79,20.30,15.26,22.82,12.15,22.82C9.04,22.82,6.51,20.30,6.51,17.19C6.51,14.07,9.04,11.55,12.15,11.55z"
+              />
+              <path
+                fill="#FFFFFF"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,17.19C9.33,14.13,6.17,10.31,6.01,6.69C6.01,-1.10,18.15,-1.10,18.11,6.65C17.96,10.00,15.12,14.17,12.15,17.19z"
+              />
+              <path
+                fill="#ffe01b"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M11.92,2.70C14.17,2.70,15.99,4.52,15.99,6.77C15.99,9.02,14.17,10.85,11.92,10.85C9.67,10.85,7.85,9.02,7.85,6.77C7.85,4.52,9.67,2.70,11.92,2.70z"
+              />
+            </svg>
+          </div>
+          <div class="square square-four yellow" id="yellowrestart4">
+            <svg
+              class="yellowpiece"
+              id="yellow4"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0%"
+              y="0%"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24.0 24.0"
+              enable-background="new 0 0 24.0 24.0"
+              xml:space="preserve"
+            >
+              <defs>
+                <linearGradient
+                  id="stkGrad1"
+                  x1="-3.107%"
+                  y1="49.865%"
+                  x2="100.605%"
+                  y2="50.091%"
+                >
+                  <stop
+                    offset="0.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.078%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.915%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.308%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.397%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="24.482%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="23.852%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.406%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.673%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="40.151%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="39.950%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="47.912%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="48.169%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.636%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.896%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.504%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.484%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.505%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.453%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.398%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.685%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.747%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.677%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.395%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.665%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <path
+                fill="#FFFFFF"
+                stroke="#682400"
+                fill-opacity="0.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="1.0240875"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,12.38C14.95,12.38,17.21,14.53,17.21,17.19C17.21,19.84,14.95,21.99,12.15,21.99C9.35,21.99,7.09,19.84,7.09,17.19C7.09,14.53,9.35,12.38,12.15,12.38z"
+              />
+              <path
+                class="pieceready"
+                id="yellow4ready"
+                transform="rotate(-0.00 12.15 17.19)"
+                fill="#FFFFFF"
+                stroke="url(#stkGrad1)"
+                fill-opacity="0.000"
+                stroke-opacity="1.0"
+                fill-rule="nonzero"
+                stroke-width="0.71999997"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,11.55C15.26,11.55,17.79,14.07,17.79,17.19C17.79,20.30,15.26,22.82,12.15,22.82C9.04,22.82,6.51,20.30,6.51,17.19C6.51,14.07,9.04,11.55,12.15,11.55z"
+              />
+              <path
+                fill="#FFFFFF"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,17.19C9.33,14.13,6.17,10.31,6.01,6.69C6.01,-1.10,18.15,-1.10,18.11,6.65C17.96,10.00,15.12,14.17,12.15,17.19z"
+              />
+              <path
+                fill="#ffe01b"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M11.92,2.70C14.17,2.70,15.99,4.52,15.99,6.77C15.99,9.02,14.17,10.85,11.92,10.85C9.67,10.85,7.85,9.02,7.85,6.77C7.85,4.52,9.67,2.70,11.92,2.70z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="house red redhouse" style="bottom: 0">
+        <div class="box">
+          <div class="square square-one red" id="redrestart1">
+            <svg
+              class="redpiece"
+              id="red1"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0%"
+              y="0%"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24.0 24.0"
+              enable-background="new 0 0 24.0 24.0"
+              xml:space="preserve"
+            >
+              <defs>
+                <linearGradient
+                  id="stkGrad1"
+                  x1="-3.107%"
+                  y1="49.865%"
+                  x2="100.605%"
+                  y2="50.091%"
+                >
+                  <stop
+                    offset="0.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.078%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.915%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.308%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.397%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="24.482%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="23.852%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.406%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.673%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="40.151%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="39.950%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="47.912%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="48.169%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.636%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.896%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.504%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.484%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.505%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.453%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.398%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.685%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.747%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.677%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.395%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.665%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <path
+                fill="#FFFFFF"
+                stroke="#682400"
+                fill-opacity="0.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="1.0240875"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,12.38C14.95,12.38,17.21,14.53,17.21,17.19C17.21,19.84,14.95,21.99,12.15,21.99C9.35,21.99,7.09,19.84,7.09,17.19C7.09,14.53,9.35,12.38,12.15,12.38z"
+              />
+              <path
+                class="pieceready"
+                id="red1ready"
+                transform="rotate(-0.00 12.15 17.19)"
+                fill="#FFFFFF"
+                stroke="url(#stkGrad1)"
+                fill-opacity="0.000"
+                stroke-opacity="1.0"
+                fill-rule="nonzero"
+                stroke-width="0.71999997"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,11.55C15.26,11.55,17.79,14.07,17.79,17.19C17.79,20.30,15.26,22.82,12.15,22.82C9.04,22.82,6.51,20.30,6.51,17.19C6.51,14.07,9.04,11.55,12.15,11.55z"
+              />
+              <path
+                fill="#FFFFFF"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,17.19C9.33,14.13,6.17,10.31,6.01,6.69C6.01,-1.10,18.15,-1.10,18.11,6.65C17.96,10.00,15.12,14.17,12.15,17.19z"
+              />
+              <path
+                fill="#ec1d27"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M11.92,2.70C14.17,2.70,15.99,4.52,15.99,6.77C15.99,9.02,14.17,10.85,11.92,10.85C9.67,10.85,7.85,9.02,7.85,6.77C7.85,4.52,9.67,2.70,11.92,2.70z"
+              />
+            </svg>
+          </div>
+          <div class="square square-two red" id="redrestart2">
+            <svg
+              class="redpiece"
+              id="red2"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0%"
+              y="0%"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24.0 24.0"
+              enable-background="new 0 0 24.0 24.0"
+              xml:space="preserve"
+            >
+              <defs>
+                <linearGradient
+                  id="stkGrad1"
+                  x1="-3.107%"
+                  y1="49.865%"
+                  x2="100.605%"
+                  y2="50.091%"
+                >
+                  <stop
+                    offset="0.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.078%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.915%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.308%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.397%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="24.482%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="23.852%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.406%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.673%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="40.151%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="39.950%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="47.912%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="48.169%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.636%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.896%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.504%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.484%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.505%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.453%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.398%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.685%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.747%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.677%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.395%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.665%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <path
+                fill="#FFFFFF"
+                stroke="#682400"
+                fill-opacity="0.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="1.0240875"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,12.38C14.95,12.38,17.21,14.53,17.21,17.19C17.21,19.84,14.95,21.99,12.15,21.99C9.35,21.99,7.09,19.84,7.09,17.19C7.09,14.53,9.35,12.38,12.15,12.38z"
+              />
+              <path
+                class="pieceready"
+                id="red2ready"
+                transform="rotate(-0.00 12.15 17.19)"
+                fill="#FFFFFF"
+                stroke="url(#stkGrad1)"
+                fill-opacity="0.000"
+                stroke-opacity="1.0"
+                fill-rule="nonzero"
+                stroke-width="0.71999997"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,11.55C15.26,11.55,17.79,14.07,17.79,17.19C17.79,20.30,15.26,22.82,12.15,22.82C9.04,22.82,6.51,20.30,6.51,17.19C6.51,14.07,9.04,11.55,12.15,11.55z"
+              />
+              <path
+                fill="#FFFFFF"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,17.19C9.33,14.13,6.17,10.31,6.01,6.69C6.01,-1.10,18.15,-1.10,18.11,6.65C17.96,10.00,15.12,14.17,12.15,17.19z"
+              />
+              <path
+                fill="#ec1d27"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M11.92,2.70C14.17,2.70,15.99,4.52,15.99,6.77C15.99,9.02,14.17,10.85,11.92,10.85C9.67,10.85,7.85,9.02,7.85,6.77C7.85,4.52,9.67,2.70,11.92,2.70z"
+              />
+            </svg>
+          </div>
+          <div class="square square-three red" id="redrestart3">
+            <svg
+              class="redpiece"
+              id="red3"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0%"
+              y="0%"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24.0 24.0"
+              enable-background="new 0 0 24.0 24.0"
+              xml:space="preserve"
+            >
+              <defs>
+                <linearGradient
+                  id="stkGrad1"
+                  x1="-3.107%"
+                  y1="49.865%"
+                  x2="100.605%"
+                  y2="50.091%"
+                >
+                  <stop
+                    offset="0.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.078%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.915%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.308%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.397%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="24.482%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="23.852%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.406%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.673%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="40.151%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="39.950%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="47.912%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="48.169%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.636%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.896%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.504%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.484%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.505%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.453%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.398%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.685%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.747%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.677%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.395%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.665%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <path
+                fill="#FFFFFF"
+                stroke="#682400"
+                fill-opacity="0.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="1.0240875"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,12.38C14.95,12.38,17.21,14.53,17.21,17.19C17.21,19.84,14.95,21.99,12.15,21.99C9.35,21.99,7.09,19.84,7.09,17.19C7.09,14.53,9.35,12.38,12.15,12.38z"
+              />
+              <path
+                class="pieceready"
+                id="red3ready"
+                transform="rotate(-0.00 12.15 17.19)"
+                fill="#FFFFFF"
+                stroke="url(#stkGrad1)"
+                fill-opacity="0.000"
+                stroke-opacity="1.0"
+                fill-rule="nonzero"
+                stroke-width="0.71999997"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,11.55C15.26,11.55,17.79,14.07,17.79,17.19C17.79,20.30,15.26,22.82,12.15,22.82C9.04,22.82,6.51,20.30,6.51,17.19C6.51,14.07,9.04,11.55,12.15,11.55z"
+              />
+              <path
+                fill="#FFFFFF"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,17.19C9.33,14.13,6.17,10.31,6.01,6.69C6.01,-1.10,18.15,-1.10,18.11,6.65C17.96,10.00,15.12,14.17,12.15,17.19z"
+              />
+              <path
+                fill="#ec1d27"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M11.92,2.70C14.17,2.70,15.99,4.52,15.99,6.77C15.99,9.02,14.17,10.85,11.92,10.85C9.67,10.85,7.85,9.02,7.85,6.77C7.85,4.52,9.67,2.70,11.92,2.70z"
+              />
+            </svg>
+          </div>
+          <div class="square square-four red" id="redrestart4">
+            <svg
+              class="redpiece"
+              id="red4"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0%"
+              y="0%"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24.0 24.0"
+              enable-background="new 0 0 24.0 24.0"
+              xml:space="preserve"
+            >
+              <defs>
+                <linearGradient
+                  id="stkGrad1"
+                  x1="-3.107%"
+                  y1="49.865%"
+                  x2="100.605%"
+                  y2="50.091%"
+                >
+                  <stop
+                    offset="0.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.078%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="6.915%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.308%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="15.397%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="24.482%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="23.852%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.406%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="31.673%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="40.151%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="39.950%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="47.912%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="48.169%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.636%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="56.896%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.504%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="63.484%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.505%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="70.453%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.398%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="78.685%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.747%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="86.677%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.395%"
+                    style="stop-color: rgb(255, 255, 255); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="95.665%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                  <stop
+                    offset="100.000%"
+                    style="stop-color: rgb(0, 0, 0); stop-opacity: 1"
+                  />
+                </linearGradient>
+              </defs>
+              <path
+                fill="#FFFFFF"
+                stroke="#682400"
+                fill-opacity="0.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="1.0240875"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,12.38C14.95,12.38,17.21,14.53,17.21,17.19C17.21,19.84,14.95,21.99,12.15,21.99C9.35,21.99,7.09,19.84,7.09,17.19C7.09,14.53,9.35,12.38,12.15,12.38z"
+              />
+              <path
+                class="pieceready"
+                id="red4ready"
+                transform="rotate(-0.00 12.15 17.19)"
+                fill="#FFFFFF"
+                stroke="url(#stkGrad1)"
+                fill-opacity="0.000"
+                stroke-opacity="1.0"
+                fill-rule="nonzero"
+                stroke-width="0.71999997"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,11.55C15.26,11.55,17.79,14.07,17.79,17.19C17.79,20.30,15.26,22.82,12.15,22.82C9.04,22.82,6.51,20.30,6.51,17.19C6.51,14.07,9.04,11.55,12.15,11.55z"
+              />
+              <path
+                fill="#FFFFFF"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M12.15,17.19C9.33,14.13,6.17,10.31,6.01,6.69C6.01,-1.10,18.15,-1.10,18.11,6.65C17.96,10.00,15.12,14.17,12.15,17.19z"
+              />
+              <path
+                fill="#ec1d27"
+                stroke="#000000"
+                fill-opacity="1.000"
+                stroke-opacity="1.000"
+                fill-rule="nonzero"
+                stroke-width="0.4011954"
+                stroke-linejoin="miter"
+                stroke-linecap="square"
+                d="M11.92,2.70C14.17,2.70,15.99,4.52,15.99,6.77C15.99,9.02,14.17,10.85,11.92,10.85C9.67,10.85,7.85,9.02,7.85,6.77C7.85,4.52,9.67,2.70,11.92,2.70z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="house blue bluehouse" style="bottom: 0; right: 0">
+        <div class="box">
+          <div class="square square-one blue"></div>
+          <div class="square square-two blue"></div>
+          <div class="square square-three blue"></div>
+          <div class="square square-four blue"></div>
+        </div>
+      </div>
+
+      <div class="home">
+        <div class="yellowhome">
+          <div class="ysvg y206" id="206"></div>
+          <div class="ysvg y207" id="207"></div>
+          <div class="ysvg y208" id="208"></div>
+          <div class="ysvg y209" id="209"></div>
+        </div>
+
+        <div class="redhome">
+          <div class="rsvg r106" id="106"></div>
+          <div class="rsvg r107" id="107"></div>
+          <div class="rsvg r108" id="108"></div>
+          <div class="rsvg r109" id="109"></div>
+        </div>
+      </div>
+      <div class="cells" id="39" style="top: 40%"></div>
+      <div
+        class="cells g-start"
+        id="40"
+        style="top: 40%; left: 6.66%; background-color: #01a147"
+      >
+        <span>40</span>
+      </div>
+      <div class="cells" id="41" style="top: 40%; left: 13.32%"></div>
+      <div class="cells" id="42" style="top: 40%; left: 19.98%"></div>
+      <div class="cells" id="43" style="top: 40%; left: 26.64%"></div>
+      <div class="cells" id="44" style="top: 40%; left: 33.3%"></div>
+
+      <div class="cells" id="50" style="top: 0; left: 40%"></div>
+      <div class="cells" id="49" style="top: 6.66%; left: 40%"></div>
+      <div class="cells safe" id="48" style="top: 13.32%; left: 40%">
+        <span>48</span>
+      </div>
+      <div class="cells" id="47" style="top: 19.98%; left: 40%"></div>
+      <div class="cells" id="46" style="top: 26.64%; left: 40%"></div>
+      <div class="cells" id="45" style="top: 33.3%; left: 40%"></div>
+
+      <div class="cells" id="51" style="top: 0; left: 46.66%"></div>
+      <div class="cells yellow" id="201" style="top: 6.66%; left: 46.66%"></div>
+      <div
+        class="cells yellow"
+        id="202"
+        style="top: 13.32%; left: 46.66%"
+      ></div>
+      <div
+        class="cells yellow"
+        id="203"
+        style="top: 19.98%; left: 46.66%"
+      ></div>
+      <div
+        class="cells yellow"
+        id="204"
+        style="top: 26.64%; left: 46.66%"
+      ></div>
+      <div class="cells yellow" id="205" style="top: 33.3%; left: 46.66%"></div>
+
+      <div class="cells" id="52" style="top: 0; left: 53.32%"></div>
+      <div class="cells y-start" id="1" style="top: 6.66%; left: 53.32%">
+        <span>1</span>
+      </div>
+      <div class="cells" id="2" style="top: 13.32%; left: 53.32%"></div>
+      <div class="cells" id="3" style="top: 19.98%; left: 53.32%"></div>
+      <div class="cells" id="4" style="top: 26.64%; left: 53.32%"></div>
+      <div class="cells" id="5" style="top: 33.3%; left: 53.32%"></div>
+
+      <div class="cells" id="6" style="top: 40%; right: 33.3%"></div>
+      <div class="cells" id="7" style="top: 40%; right: 26.64%"></div>
+      <div class="cells" id="8" style="top: 40%; right: 19.98%"></div>
+      <div class="cells safe" id="9" style="top: 40%; right: 13.32%">
+        <span>9</span>
+      </div>
+      <div class="cells" id="10" style="top: 40%; right: 6.66%"></div>
+      <div class="cells" id="11" style="top: 40%; right: 0"></div>
+
+      <div class="cells blue" style="top: 46.66%; right: 33.3%"></div>
+      <div class="cells blue" style="top: 46.66%; right: 26.64%"></div>
+      <div class="cells blue" style="top: 46.66%; right: 19.98%"></div>
+      <div class="cells blue" style="top: 46.66%; right: 13.32%"></div>
+      <div class="cells blue" style="top: 46.66%; right: 6.66%"></div>
+      <div class="cells" id="12" style="top: 46.66%; right: 0"></div>
+
+      <div class="cells" id="18" style="top: 53.32%; right: 33.3%"></div>
+      <div class="cells" id="17" style="top: 53.32%; right: 26.64%"></div>
+      <div class="cells" id="16" style="top: 53.32%; right: 19.98%"></div>
+      <div class="cells" id="15" style="top: 53.32%; right: 13.32%"></div>
+      <div class="cells b-start" id="14" style="top: 53.32%; right: 6.66%">
+        <span>14</span>
+      </div>
+      <div class="cells" id="13" style="top: 53.32%; right: 0"></div>
+
+      <div class="cells" id="24" style="bottom: 0; left: 53.32%"></div>
+      <div class="cells" id="23" style="bottom: 6.66%; left: 53.32%"></div>
+      <div class="cells safe" id="22" style="bottom: 13.32%; left: 53.32%">
+        <span>22</span>
+      </div>
+      <div class="cells" id="21" style="bottom: 19.98%; left: 53.32%"></div>
+      <div class="cells" id="20" style="bottom: 26.64%; left: 53.32%"></div>
+      <div class="cells" id="19" style="bottom: 33.3%; left: 53.32%"></div>
+
+      <div class="cells" id="25" style="bottom: 0; left: 46.66%"></div>
+      <div class="cells red" id="101" style="bottom: 6.66%; left: 46.66%"></div>
+      <div
+        class="cells red"
+        id="102"
+        style="bottom: 13.32%; left: 46.66%"
+      ></div>
+      <div
+        class="cells red"
+        id="103"
+        style="bottom: 19.98%; left: 46.66%"
+      ></div>
+      <div
+        class="cells red"
+        id="104"
+        style="bottom: 26.64%; left: 46.66%"
+      ></div>
+      <div class="cells red" id="105" style="bottom: 33.3%; left: 46.66%"></div>
+
+      <div class="cells" id="26" style="bottom: 0; left: 40%"></div>
+      <div class="cells r-start" id="27" style="bottom: 6.66%; left: 40%">
+        <span>27</span>
+      </div>
+      <div class="cells" id="28" style="bottom: 13.32%; left: 40%"></div>
+      <div class="cells" id="29" style="bottom: 19.98%; left: 40%"></div>
+      <div class="cells" id="30" style="bottom: 26.64%; left: 40%"></div>
+      <div class="cells" id="31" style="bottom: 33.3%; left: 40%"></div>
+
+      <div class="cells" id="32" style="top: 53.32%; left: 33.3%"></div>
+      <div class="cells" id="33" style="top: 53.32%; left: 26.64%"></div>
+      <div class="cells" id="34" style="top: 53.32%; left: 19.98%"></div>
+      <div class="cells safe" id="35" style="top: 53.32%; left: 13.32%">
+        <span>35</span>
+      </div>
+      <div class="cells" id="36" style="top: 53.32%; left: 6.66%"></div>
+      <div class="cells" id="37" style="top: 53.32%; left: 0"></div>
+
+      <div
+        class="cells green"
+        id="red111"
+        style="top: 46.66%; left: 33.3%"
+      ></div>
+      <div class="cells green" style="top: 46.66%; left: 26.64%"></div>
+      <div class="cells green" style="top: 46.66%; left: 19.98%"></div>
+      <div class="cells green" style="top: 46.66%; left: 13.32%"></div>
+      <div class="cells green" style="top: 46.66%; left: 6.66%"></div>
+      <div class="cells" id="38" style="top: 46.66%; left: 0"></div>
+    </div>
+
+    <p id="live"></p>
+
+    <div class="ydicebox" id="ydicebox">
+      <div class="ycard" id="front1">
+        <div class="dot1 ydots"></div>
+      </div>
+      <div class="ycard" id="back1">
+        <div class="dot1 ydots"></div>
+        <div class="dot2 ydots"></div>
+        <div class="dot3 ydots"></div>
+        <div class="dot4 ydots"></div>
+        <div class="dot5 ydots"></div>
+      </div>
+      <div class="ycard" id="left1">
+        <div class="dot1 ydots"></div>
+        <div class="dot2 ydots"></div>
+      </div>
+      <div class="ycard" id="right1">
+        <div class="dot1 ydots"></div>
+        <div class="dot2 ydots"></div>
+        <div class="dot3 ydots"></div>
+      </div>
+      <div class="ycard" id="top1">
+        <div class="dot1 ydots"></div>
+        <div class="dot2 ydots"></div>
+        <div class="dot3 ydots"></div>
+        <div class="dot4 ydots"></div>
+      </div>
+      <div class="ycard" id="bottom1">
+        <div class="dot1 ydots"></div>
+        <div class="dot2 ydots"></div>
+        <div class="dot3 ydots"></div>
+        <div class="dot4 ydots"></div>
+        <div class="dot5 ydots"></div>
+        <div class="dot6 ydots"></div>
+      </div>
+    </div>
+
+    <svg
+      id="hintArrowRed"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0%"
+      y="0%"
+      width="100%"
+      height="100%"
+      viewBox="0 0 24.0 24.0"
+      enable-background="new 0 0 24.0 24.0"
+      xml:space="preserve"
+    >
+      <defs>
+        <linearGradient
+          id="fillGrad22"
+          x1="49.661%"
+          y1="12.877%"
+          x2="50.010%"
+          y2="98.830%"
+        >
+          <stop
+            offset="0.000%"
+            style="stop-color: rgb(239, 255, 11); stop-opacity: 1"
+          />
+          <stop
+            offset="49.859%"
+            style="stop-color: rgb(255, 149, 0); stop-opacity: 1"
+          />
+          <stop
+            offset="100.000%"
+            style="stop-color: rgb(255, 0, 0); stop-opacity: 1"
+          />
+        </linearGradient>
+      </defs>
+      <path
+        transform="rotate(-0.00 12.16 12.21)"
+        fill="url(#fillGrad22)"
+        stroke="#000000"
+        fill-opacity="1.0"
+        stroke-opacity="1.000"
+        fill-rule="nonzero"
+        stroke-width="0.3057089"
+        stroke-linejoin="miter"
+        stroke-linecap="square"
+        d="M12.75,19.93L23.31,9.27C23.85,8.62,23.70,8.00,23.00,7.90L20.29,7.90L20.29,4.94Q20.13,4.21,19.15,4.21L4.93,4.17Q3.75,4.16,3.54,5.11L3.54,8.01L1.08,8.01C0.42,8.26,0.63,8.79,1.27,9.62L11.15,19.93Q12.00,20.58,12.75,19.93z"
+      />
+    </svg>
+
+    <!-- 
+
+      ************************************************************
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+{   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  }
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+      ************************************************************
+ -->
+
+    <div class="rdicebox" id="rdicebox">
+      <div class="card" id="front">
+        <div class="dot1 dots"></div>
+      </div>
+      <div class="card" id="back">
+        <div class="dot1 dots"></div>
+        <div class="dot2 dots"></div>
+        <div class="dot3 dots"></div>
+        <div class="dot4 dots"></div>
+        <div class="dot5 dots"></div>
+      </div>
+      <div class="card" id="left">
+        <div class="dot1 dots"></div>
+        <div class="dot2 dots"></div>
+      </div>
+      <div class="card" id="right">
+        <div class="dot1 dots"></div>
+        <div class="dot2 dots"></div>
+        <div class="dot3 dots"></div>
+      </div>
+      <div class="card" id="top">
+        <div class="dot1 dots"></div>
+        <div class="dot2 dots"></div>
+        <div class="dot3 dots"></div>
+        <div class="dot4 dots"></div>
+      </div>
+      <div class="card" id="bottom">
+        <div class="dot1 dots"></div>
+        <div class="dot2 dots"></div>
+        <div class="dot3 dots"></div>
+        <div class="dot4 dots"></div>
+        <div class="dot5 dots"></div>
+        <div class="dot6 dots"></div>
+      </div>
+    </div>
+
+    <div class="yellowuser" id="yellowuser">
+      <canvas id="my_canvas" width="70" height="70" style=""> </canvas>
+
+      <img
+        style="border-radius: 50%"
+        src="./favicon.png"
+      />
+    </div>
+
+    <script>
+      var al = 100;
+
+      var ctx = document.getElementById("my_canvas").getContext("2d");
+
+      var start = 4.72;
+      var startColor = "#1DFE00"; //red "#1DFE00"
+      var cw = ctx.canvas.width;
+      var ch = ctx.canvas.height;
+      var diff;
+      function progressSim() {
+        diff = ((al / 100) * Math.PI * 2 * 10).toFixed(2);
+        ctx.clearRect(0, 0, cw, ch);
+        ctx.lineWidth = 9;
+        ctx.fillStyle = "#09F";
+        ctx.strokeStyle = startColor;
+        ctx.textAlign = "center";
+        ctx.fillText("", cw * 0.5, ch * 0.5 + 2, cw);
+        ctx.beginPath();
+        ctx.arc(35, 35, 30, start, diff / 10 + start, false);
+        ctx.stroke();
+
+        if (al <= 25) {
+          startColor = "red";
+        } else if (al < 60 && al > 25) {
+          startColor = "orange";
+        } else {
+          startColor = "#1DFE00";
+        }
+
+        if (al <= 0) {
+          clearInterval(sim);
+        }
+        al--;
+      }
+
+      sim = setInterval(progressSim, 150);
+      clearInterval(sim);
+    </script>
+
+    <div class="reduser" id="reduser">
+      <canvas id="my_canvas2" width="70" height="70" style=""> </canvas>
+
+      <img
+        style="border-radius: 50%"
+        src="./user.png"
+      />
+
+      <div class="autoExit">
+        <div id="c3"></div>
+        <div id="c2"></div>
+        <div id="c1"></div>
+      </div>
+    </div>
+
+    <script></script>
+
+    <div class="cheatbox">
+      <p id="dicep6">6 Only</p>
+      <div class="switch upswitch" id="dice6ballbg">
+        <div class="ball" id="ball1"></div>
+      </div>
+
+      <p id="dicep1">1 Only</p>
+
+      <div class="switch downswitch" id="dice1ballbg">
+        <div class="ball" id="ball2"></div>
+      </div>
+    </div>
+
+    <div id="finalnote">
+      <p id="finalnotep">You Won</p>
+    </div>
+
+    <p
+      style="
+        position: absolute;
+        bottom: 0px;
+        left: 50vw;
+        transform: translate(-50%, 0%);
+        color: white;
+      "
+    >
+      &copy Aryan Maurya 
+    </p>
+  </body>
+</html>
+
+<!-- 
+
+      ************************************************************
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+{   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  }
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+      ************************************************************
+ -->

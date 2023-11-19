@@ -1,0 +1,1278 @@
+/* 
+
+     ============================================================
+      
+          _____________   ^^^^^^^^^^    ____________________
+
+[   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  ]
+
+          _____________   ^^^^^^^^^^    ____________________
+
+     ============================================================
+
+*/
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing:border-box;
+}
+
+
+
+body {
+    background-image: url(https://i.ibb.co/PN5V5YS/Capture-2021-09-29-10-31-35-01.jpg);
+    background-size:cover;
+    background-repeat:repeat;
+    background-attachment: fixed;
+    
+}
+
+
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+    position:absolute;
+    bottom:15vh;
+    transform:translate(-50% -50%);
+}
+
+
+.cells {
+    position: absolute;
+    width: 6.66% ;
+    height: 6.66%;
+    border-collapse:collapse;
+    border: 0.1px solid black;
+    display:flex;
+    background-color:white;
+}
+
+
+
+
+.green {
+    background-color: #01A147;
+}
+.red {
+    background-color: #ec1d27;
+}
+.yellow {
+    background-color: #ffe01b;
+}
+.blue {
+    background-color: #29b6f6;
+}
+
+.house {
+    display: inline-block;
+    position: absolute;
+    width:40%;
+    height:40%;
+    padding:7%;
+    border: 1px solid black;
+    
+}
+
+
+.redhouse {
+    animation: redready 0.5s ease-in-out infinite;
+}
+
+
+
+@keyframes redready {
+    0%{
+        background-color:#ec1d27;
+    }
+    50% {
+        background-color:#810e13;
+    }
+    100% {
+        background-color:#ec1d27;
+    }
+}
+
+
+
+.yellowhouse {
+    animation: yellowready 0.5s ease-in-out infinite;
+}
+
+
+
+@keyframes yellowready {
+    0%{
+        background-color:#ffe01b;
+    }
+    50% {
+        background-color:#a9920e;
+    }
+    100% {
+        background-color:#ffe01b;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box {
+    position: relative;
+    width:100%;
+    height:100%;
+    background-color:white;
+    padding:20%;
+    border: 1px solid black;
+}
+.square {
+    position: absolute;
+    width:25%;
+    height:25%;
+    border-radius:50%;
+
+}
+.square-one {
+    top:12%;
+    left:12%;
+}
+.square-two {
+    top: 12%;
+    right: 12%;
+}
+.square-three {
+    bottom: 12%;
+    left: 12%;
+}
+.square-four {
+    bottom: 12%;
+    right: 12%;
+}
+
+
+
+.home {
+    position: absolute;
+    top:40%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    border-bottom: 10vw solid #e53935;
+    border-top: 10vw solid #fff176;
+    border-left: 10vw solid #66bb6a;
+    border-right: 10vw solid #29b6f6;
+    background-color:transparent;
+}
+
+
+
+
+
+
+
+    
+.safe {
+background-image: url(https://i.ibb.co/cXmb7c1/star-safe.jpg);
+
+background-repeat:repeat;
+background-size:cover;
+
+
+
+}
+    
+
+.g-start {
+    background-color: #01A147;
+    
+}
+
+.y-start {
+    background-color: #ffe01b;
+    
+}
+.r-start {
+    background-color: #ec1d27;
+    
+
+}
+.b-start {
+    background-color: #29b6f6;
+    
+}
+
+
+
+.yellowpiece {
+    
+}
+
+.dice {
+   width:100%;
+}
+
+.mydice {
+    
+}
+
+.pieceready {
+    transform-box:fill-box;
+    transform-origin:center;
+    animation:vinay 0.1s ease-in-out infinite;
+}
+
+@keyframes vinay {
+    from {
+        transform:rotateZ(0deg);
+    }
+    to {
+        transform:rotateZ(360deg);
+    }
+}
+
+
+
+.rdicebox {
+    height:50px;
+    width:50px;
+    position:absolute;
+    bottom:5vh;
+    left:45vw;
+    border:0px solid white;
+    transform-style: preserve-3d;
+    /*transform:rotateX(-90deg);*/
+    /*transform:rotateY(90deg);*/
+    /*animation: tirugura 1s linear infinite;*/
+}
+
+/* 
+
+     ============================================================
+      
+          _____________   ^^^^^^^^^^    ____________________
+
+[   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  ]
+
+          _____________   ^^^^^^^^^^    ____________________
+
+     ============================================================
+
+*/
+
+@keyframes tirugura {
+    from{
+        transform:rotateY(0deg);
+    }
+    to {
+        transform:rotateY(1500deg);
+    }
+}
+
+@keyframes tirugu {
+    0% {
+        transform:rotateY(0deg);
+        
+    }
+    25% {
+        transform:rotateY(360deg);
+        
+    }
+    50% {
+        
+        transform:rotateX(0deg);
+        
+        
+    }
+    75% {
+        transform:rotateX(360deg);
+        
+    }
+    
+    100% {
+        transform:rotateX(-3600deg);
+        
+    }
+}
+
+.card {
+    height:50px;
+    width:50px;
+    text-align:center;
+    padding:0px 0px;
+    border:0.1px solid white;
+    background:red;
+    color:black;
+    font-size:32px;
+    box-sizing:border-box;
+    position:absolute;
+    text-align:center;
+    border-radius:10%;
+    /*box-shadow:0px 0px 15px 0.1px black;*/
+    
+}
+
+
+#left {
+    right:50%;
+    transform:rotateY(90deg);
+}
+
+#right {
+    left:50%;
+    transform:rotateY(90deg);
+}
+
+#top {
+    bottom:50%;
+    transform:rotateX(90deg);
+}
+
+#bottom {
+    top:50%;
+    transform:rotateX(90deg);
+}
+
+#front {
+    transform:translateZ(25px);
+}
+
+#back {
+    transform:translateZ(-25px);
+}
+
+#front .dot1 {
+    height:25%;
+    width:25%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    left:37.5%;
+    top:37.5%;
+}
+
+#right .dot1 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    left:10%;
+    top:10%;
+}
+
+#right .dot2 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    left:40%;
+    top:40%;
+}
+
+#right .dot3 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    right:10%;
+    bottom:10%;
+}
+
+#back .dot1 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:10%;
+    right:10%;
+}
+
+#back .dot2 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:10%;
+    left:10%;
+}
+
+#back .dot3 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:40%;
+    left:40%;
+}
+
+#back .dot4 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:10%;
+    right:10%;
+}
+
+#back .dot5 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:10%;
+    left:10%;
+}
+
+#left .dot1 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:15%;
+    left:15%;
+}
+
+#left .dot2 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:10%;
+    right:10%;
+}
+
+#bottom .dot1 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:10%;
+    right:15%;
+}
+
+#bottom .dot2 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:40%;
+    right:15%;
+}
+
+#bottom .dot3 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:10%;
+    right:15%;
+}
+
+#bottom .dot4 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:10%;
+    left:15%;
+}
+
+#bottom .dot5 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:40%;
+    left:15%;
+}
+
+#bottom .dot6 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:10%;
+    left:15%;
+}
+
+#top .dot1 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:15%;
+    left:15%;
+}
+
+#top .dot2 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:15%;
+    right:15%;
+}
+
+#top .dot3 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:15%;
+    left:15%;
+}
+
+#top .dot4 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:15%;
+    right:15%;
+}
+
+.dots {
+    background-color:white;
+}
+
+.ydicebox {
+    height:50px;
+    width:50px;
+    position:absolute;
+    top:5vw;
+    right:45vw;
+    border:0px solid white;
+    transform-style: preserve-3d;
+    /*transform:rotateX(-90deg);*/
+    /*transform:rotateY(90deg);*/
+    /*animation: tirugura 1s linear infinite;*/
+}
+
+@keyframes tirugur {
+    from{
+        transform:rotateY(0deg);
+    }
+    to {
+        transform:rotateY(1500deg);
+    }
+}
+
+@keyframes tirug {
+    0% {
+        transform:rotateY(0deg);
+        
+    }
+    25% {
+        transform:rotateY(360deg);
+        
+    }
+    50% {
+        
+        transform:rotateX(0deg);
+        
+        
+    }
+    75% {
+        transform:rotateX(360deg);
+        
+    }
+    
+    100% {
+        transform:rotateX(-3600deg);
+        
+    }
+}
+
+.ycard {
+    height:50px;
+    width:50px;
+    text-align:center;
+    padding:0px 0px;
+    border:0.1px solid black;
+    background:yellow;
+    color:black;
+    font-size:32px;
+    box-sizing:border-box;
+    position:absolute;
+    text-align:center;
+    border-radius:10%;
+    /*box-shadow:0px 0px 15px 0.1px black;*/
+    
+}
+
+
+#left1 {
+    right:50%;
+    transform:rotateY(90deg);
+}
+
+#right1 {
+    left:50%;
+    transform:rotateY(90deg);
+}
+
+#top1 {
+    bottom:50%;
+    transform:rotateX(90deg);
+}
+
+#bottom1 {
+    top:50%;
+    transform:rotateX(90deg);
+}
+
+#front1 {
+    transform:translateZ(25px);
+}
+
+#back1 {
+    transform:translateZ(-25px);
+}
+
+#front1 .dot1 {
+    height:25%;
+    width:25%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    left:37.5%;
+    top:37.5%;
+}
+
+#right1 .dot1 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    left:10%;
+    top:10%;
+}
+
+#right1 .dot2 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    left:40%;
+    top:40%;
+}
+
+#right1 .dot3 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    right:10%;
+    bottom:10%;
+}
+
+#back1 .dot1 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:10%;
+    right:10%;
+}
+
+#back1 .dot2 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:10%;
+    left:10%;
+}
+
+#back1 .dot3 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:40%;
+    left:40%;
+}
+
+#back1 .dot4 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:10%;
+    right:10%;
+}
+
+#back1 .dot5 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:10%;
+    left:10%;
+}
+
+#left1 .dot1 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:15%;
+    left:15%;
+}
+
+#left1 .dot2 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:10%;
+    right:10%;
+}
+
+#bottom1 .dot1 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:10%;
+    right:15%;
+}
+
+#bottom1 .dot2 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:40%;
+    right:15%;
+}
+
+#bottom1 .dot3 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:10%;
+    right:15%;
+}
+
+#bottom1 .dot4 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:10%;
+    left:15%;
+}
+
+
+/* 
+
+     ============================================================
+      
+          _____________   ^^^^^^^^^^    ____________________
+
+[   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  ]
+
+          _____________   ^^^^^^^^^^    ____________________
+
+     ============================================================
+
+*/
+#bottom1 .dot5 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:40%;
+    left:15%;
+}
+
+#bottom1 .dot6 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:10%;
+    left:15%;
+}
+
+#top1 .dot1 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:15%;
+    left:15%;
+}
+
+#top1 .dot2 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    top:15%;
+    right:15%;
+}
+
+#top1 .dot3 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:15%;
+    left:15%;
+}
+
+#top1 .dot4 {
+    height:20%;
+    width:20%;
+    border-radius:50%;
+    
+    position:absolute;
+    transform:translate(-50% -50%);
+    bottom:15%;
+    right:15%;
+}
+
+
+
+.ydots {
+    background-color:black;
+}
+
+
+
+.redhome {
+    position:absolute;
+    top:100%;
+    border:0.0px solid white;
+    height:10vw;
+    left:-5vw;
+    width:10vw;
+    display:flex;
+    flex-basis:25%;
+}
+
+.yellowhome {
+    position:absolute;
+    bottom:100%;
+    border:0.0px solid black;
+    height:10vw;
+    left:-5vw;
+    width:10vw;
+}
+
+
+.rsvg {
+    height:5vw;
+    width:5vw;
+}
+
+.r106{
+    position:absolute;
+    top:0;
+    left:0;
+    
+}
+
+.r107{
+    position:absolute;
+    top:0;
+    right:0;
+    
+}
+
+.r108{
+    position:absolute;
+    bottom:0;
+    left:0;
+    
+}
+
+.r109{
+    position:absolute;
+    bottom:0;
+    right:0;
+    
+}
+
+.rsvg svg {
+    height:2vw;
+    width:2vw;
+}
+
+
+
+.ysvg {
+    height:5vw;
+    width:5vw;
+}
+
+.y206{
+    position:absolute;
+    top:0;
+    left:0;
+    
+}
+
+.y207{
+    position:absolute;
+    top:0;
+    right:0;
+    
+}
+
+.y208{
+    position:absolute;
+    bottom:0;
+    left:0;
+    
+}
+
+.y209{
+    position:absolute;
+    bottom:0;
+    right:0;
+    
+}
+
+
+
+canvas {
+    position:absolute;
+    height:60px;
+    width:60px;
+}
+
+.yellowuser {
+    position:absolute;
+    border:0px solid white;
+    right:80px;
+    top:20px;
+}
+
+.yellowuser img {
+    position:absolute;
+    margin:0px;
+    padding:4px;
+    height:60px; /*82.5px*/
+    border:0px solid black;
+    
+}
+
+.reduser {
+    position:absolute;
+    border:0px solid white;
+    left:20px;
+    bottom:80px;
+}
+
+.reduser img {
+    position:absolute;
+    margin:0px;
+    padding:4px;
+    height:60px; /*82.5px*/
+    border:0px solid black;
+    
+}
+
+.cheatbox {
+    position:absolute;
+    height:75px;
+    width:150px;
+    background-color:rgba(0,255,0,0.2);
+    border-radius:10px;
+    color:white;
+    font-weight:500;
+    top:5vw;
+    left:5vw;
+    font-size:15px;
+    border:1px solid yellow;
+    display:none;
+}
+
+#dicep6 {
+    position:absolute;
+    top:15px;
+    left:20px;
+    line-height:5px;
+}
+
+#dicep1 {
+    position:absolute;
+    bottom:15px;
+    left:20px;
+    line-height:5px;
+}
+
+.switch {
+    position:absolute;
+    top:50px;
+    height:10px;
+    width:23px;
+    background-color:#D3D3D3;
+    border-radius:10px;
+    border:0.1px solid black;
+}
+
+.upswitch {
+    top:15px;
+    right:20px;
+}
+
+.downswitch {
+    bottom:15px;
+    right:20px;
+}
+
+
+
+.ball {
+    height:15px;
+    width:15px;
+    border-radius:50%;
+    background-color:grey;
+    position:absolute;
+    top:-2.5px;
+    left:-1px;
+    transition:0.1s ease-in-out;
+    border:0.1px solid black;
+}
+
+
+
+
+
+
+
+span {
+    display:none;
+}
+
+#finalnote {
+    position:fixed;
+    height:100%;
+    width:100%;
+    background-color:black;
+    z-index:20;
+    top:0;
+    left:0;
+    display:none;
+}
+
+#finalnote p{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    font-weight:500;
+    font-size:30px;
+    color:white;
+}
+
+/*svg {
+    position:absolute;
+    top:-9vw;
+    left:-10.5vw;
+    height:17vw;
+    width:17vw;
+    z-index:10;
+    transition:0.1s ease-in-out;
+}*/
+
+
+svg {
+    position:absolute;
+    top:-5.6vw;
+    left:-3vw;
+    height:12vw;
+    width:12vw;
+    z-index:10;
+    transition:0.1s ease-in-out;
+}
+
+#yellow1 {
+    z-index:5;
+}
+
+#yellow2 {
+    z-index:5;
+}
+
+#yellow3 {
+    z-index:5;
+}
+
+#yellow4 {
+    z-index:5;
+}
+
+.autoExit {
+    position:absolute;
+    width:30px;
+    background-color:;
+    height:5px;
+    top:45px;
+    left:15px;
+    z-index:2;
+    display:flex;
+    justify-content:center;
+    align-content:space-between;
+}
+
+.autoExit div {
+    height:4px;
+    width:4px;
+    border-radius:50%;
+    background-color:#1DFE00;
+    margin-left:2.5px;
+    margin-right:2.5px;
+    box-shadow:0px 0px 1px 1px #1DFE00;
+}
+
+#hintArrowRed {
+    height:50px;
+    width:50px;
+    position:absolute;
+    top:80vh;
+    left:45vw;
+    animation: hintshow 0.5s ease-in-out infinite; 
+}
+
+@keyframes hintshow {
+    0%{
+        top:73vh;
+    }
+    50%{
+        top:78vh;
+    }
+    100%{
+        top:73vh;
+    }
+}
+
+/*
+.dot2 {
+    background-color:white;
+}
+.dot3 {
+    background-color:white;
+}
+.dot4 {
+    background-color:white;
+}
+.dot5 {
+    background-color:white;
+}
+.dot6 {
+    background-color:white;
+}
+*/
+/* 
+
+     ============================================================
+      
+          _____________   ^^^^^^^^^^    ____________________
+
+[   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  ]
+
+          _____________   ^^^^^^^^^^    ____________________
+
+     ============================================================
+
+*/
